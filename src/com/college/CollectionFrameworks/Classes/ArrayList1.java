@@ -1,9 +1,11 @@
 package com.college.CollectionFrameworks.Classes;
 
-public class ArrayList {
+import java.util.*;
+
+public class ArrayList1 {
     public static void main(String[] args) {
-        java.util.ArrayList<Integer> arr1 = new java.util.ArrayList<Integer>();
-        java.util.ArrayList<String> list = new java.util.ArrayList<String>();
+        ArrayList<Integer> arr1 = new ArrayList<Integer>();
+        ArrayList<String> list = new ArrayList<String>();
 
         // adding elements to the ArrayList
         list.add("Java");
