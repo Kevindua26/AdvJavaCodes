@@ -1,8 +1,10 @@
-package com.college.CollectionFrameworks;
+package com.college.CollectionFrameworks.Classes;
 
-public class Hashtable {
-    public static void main(String[] args) {
-        java.util.Hashtable<Integer, String> map = new java.util.Hashtable<Integer, String>();
+import java.util.Hashtable;
+
+public class Hashtable1 {
+    public static <HashTable> void main(String[] args) {
+        Hashtable<Integer, String> map = new Hashtable<Integer, String>();
         map.put(100, "Amit");
         map.put(102, "Ravi");
         map.put(101, "Vijay");

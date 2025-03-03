@@ -1,12 +1,15 @@
-package com.college.CollectionFrameworks;
+package com.college.CollectionFrameworks.Classes;
 
-public class HashMap {
+import java.util.HashMap;
+
+public class HashMap1 {
     public static void main(String[] args) {
-        java.util.HashMap<Integer, String> map = new java.util.HashMap<Integer, String>();
+        HashMap<Integer, String> map = new HashMap<Integer, String>();
         map.put(100,"Amit");
         map.put(101,"Vijay");
         map.put(102,"Rahul");
         map.put(103,"Gaurav");
+
         System.out.println("Initial list of elements: " + map);
 
         // key based removal

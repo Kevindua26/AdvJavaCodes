@@ -1,11 +1,11 @@
-package com.college.CollectionFrameworks;
+package com.college.CollectionFrameworks.Classes;
 
 import java.util.*;
 
-public class TreeSet {
+public class TreeSet1 {
     public static void main(String[] args) {
         // creating and adding elements
-        java.util.TreeSet<String> al = new java.util.TreeSet<String>();
+        TreeSet<String> al = new TreeSet<String>();
         al.add("Ravi");
         al.add("Vijay");
         al.add("Ravi");
