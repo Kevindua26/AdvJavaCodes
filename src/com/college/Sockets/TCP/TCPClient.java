@@ -1,4 +1,4 @@
-package com.college.Sockets;
+package com.college.Sockets.TCP;
 
 import java.io.*;
 import java.net.*;
@@ -10,13 +10,13 @@ public class TCPClient {
             DataInputStream in = new DataInputStream(System.in);
 
             // communication endpoint for client and server
-            Socket cs = new Socket("LocalHost", 6666);
+            Socket s = new Socket("LocalHost", 6666);
 
             // DataInputStream to read data from the input stream
-            DataInputStream inp = new DataInputStream(cs.getInputStream());
+            DataInputStream inp = new DataInputStream(s.getInputStream());
 
             // DataOutputStream to write data to the output stream
-            DataOutputStream out = new DataOutputStream(cs.getOutputStream());
+            DataOutputStream out = new DataOutputStream(s.getOutputStream());
             while (true) {
                 newLine = in.readLine();
                 if (newLine.equals("q")) {

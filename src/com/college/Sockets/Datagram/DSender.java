@@ -1,4 +1,4 @@
-package com.college.Sockets;
+package com.college.Sockets.Datagram;
 
 import java.io.*;
 import java.net.*;

@@ -1,4 +1,4 @@
-package com.college.Sockets;
+package com.college.Sockets.TCP;
 
 import java.io.*;
 import java.net.*;
