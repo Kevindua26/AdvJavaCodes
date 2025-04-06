@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class JDBCMetadataDemo {
     public static void main(String[] args) {
-        String url = "jdbc:mysql://localhost:3306/FUFA_BADMOSH";
+        String url = "jdbc:mysql://127.0.0.1/FUFA_BADMOSH";
         String user = "root"; // Change if needed
         String password = ""; // Add your MySQL password if needed
 
@@ -33,7 +33,7 @@ public class JDBCMetadataDemo {
             ResultSetMetaData rsMeta = rs.getMetaData();
             int columnCount = rsMeta.getColumnCount();
 
-            System.out.println("Table: employees");
+            System.out.println("Table: DEPT");
             System.out.println("Total Columns: " + columnCount);
 
             for (int i = 1; i <= columnCount; i++) {
