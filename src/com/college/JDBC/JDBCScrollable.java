@@ -6,7 +6,7 @@ public class JDBCScrollable {
     public static void main(String[] args) {
         String url = "jdbc:mysql://127.0.0.1/FUFA_BADMOSH";
         String user = "root";
-        String password = "Kevin@181869";
+        String password = "";
 
         // JDBC variables
         Connection connection = null;

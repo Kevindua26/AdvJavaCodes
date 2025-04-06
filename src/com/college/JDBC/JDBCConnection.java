@@ -11,7 +11,7 @@ public class JDBCConnection {
         // Database credentials
         String url = "jdbc:mysql://localhost:3306/FUFA_BADMOSH"; // Ensure MySQL is running
         String user = "root"; // Replace with your MySQL username
-        String password = "Kevin@181869"; // Replace with your MySQL password
+        String password = ""; // Replace with your MySQL password
 
         // JDBC variables
         Connection connection = null;

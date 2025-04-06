@@ -6,7 +6,7 @@ public class JDBCUpdatable {
     public static void main(String[] args) {
         String url = "jdbc:mysql://127.0.0.1/FUFA_BADMOSH"; // Updated database name
         String user = "root";
-        String password = "Kevin@181869"; // Ensure correct password
+        String password = ""; // Ensure correct password
 
         // JDBC variables
         Connection connection = null;

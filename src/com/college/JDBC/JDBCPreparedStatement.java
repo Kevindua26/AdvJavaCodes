@@ -6,7 +6,7 @@ public class JDBCPreparedStatement {
     public static void main(String[] args) {
         String url = "jdbc:mysql://127.0.0.1/FUFA_BADMOSH"; // Database URL
         String user = "root"; 
-        String password = "Kevin@181869"; // Your MySQL password
+        String password = ""; // Your MySQL password
 
         Connection connection = null;
         PreparedStatement selectStmt = null;

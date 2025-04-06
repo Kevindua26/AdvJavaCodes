@@ -7,7 +7,7 @@ public class JDBCInsertDelete {
     public static void main(String[] args) {
         String url = "jdbc:mysql://127.0.0.1/FUFA_BADMOSH"; // Database name
         String user = "root"; 
-        String password = "Kevin@181869"; // Use your actual MySQL password
+        String password = ""; // Use your actual MySQL password
 
         Connection connection = null;
         PreparedStatement insertStmt = null;
