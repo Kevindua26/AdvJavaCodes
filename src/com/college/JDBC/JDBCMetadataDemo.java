@@ -2,7 +2,7 @@ package com.college.JDBC;
 
 import java.sql.*;
 
-public class MetadataDemo {
+public class JDBCMetadataDemo {
     public static void main(String[] args) {
         String url = "jdbc:mysql://localhost:3306/FUFA_BADMOSH";
         String user = "root"; // Change if needed
