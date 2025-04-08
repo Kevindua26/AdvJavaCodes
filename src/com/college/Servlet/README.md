@@ -4,6 +4,7 @@
 
 ### Write a servlet program to create a simple servlet and test it.
 
+`java`
 ```java
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -37,6 +38,7 @@ public class HelloServlet extends HttpServlet {
 
 ### Write a servlet program to read the client request parameters
 
+`java`
 ```java
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -79,6 +81,7 @@ public class ReadParamsServlet extends HttpServlet {
 
 ```
 
+`html`
 ```html
 <!DOCTYPE html>
 <html>
@@ -101,6 +104,7 @@ public class ReadParamsServlet extends HttpServlet {
 
 ### Implement a Servlet to generate Multiplication Table for a Number Entered in Html Page
 
+`java`
 ```java
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -155,6 +159,7 @@ public class MultiplicationTableServlet extends HttpServlet {
 
 ```
 
+`html`
 ```html
 <!DOCTYPE html>
 <html>
@@ -177,6 +182,7 @@ public class MultiplicationTableServlet extends HttpServlet {
 
 ### Develop an application/s to demonstrate all the core tags available in JSP (Declaration, Expression, Directive and Scriptlet Tag)
 
+`jsp`
 ```jsp
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" %>
 <%@ page import="java.util.Date" %>  <%-- Directive tag to import package --%>
@@ -214,6 +220,7 @@ public class MultiplicationTableServlet extends HttpServlet {
 
 ```
 
+`bash`
 ```bash
 http://localhost:8080/YourApp/coreTagsDemo.jsp
 ```
@@ -222,6 +229,7 @@ http://localhost:8080/YourApp/coreTagsDemo.jsp
 
 ### Develop a JSP Application to accept Details from user and store it into the database table.
 
+`sql`
 ```sql
 CREATE DATABASE user_db;
 
@@ -235,6 +243,7 @@ CREATE TABLE users (
 );
 ```
 
+`html`
 ```html
 <!DOCTYPE html>
 <html>
@@ -253,7 +262,7 @@ CREATE TABLE users (
 </html>
 
 ```
-
+`jsp`
 ```jsp
 <%@ page import="java.sql.*" %>
 <%
@@ -301,6 +310,7 @@ CREATE TABLE users (
 %>
 ```
 
+`bash`
 ```bash
 // JDBC Driver Dependency
 <apache-tomcat>/lib/
@@ -313,6 +323,7 @@ http://localhost:8080/YourApp/register.html
 
 ### Develop a JSP Application to Authenticate User login as per registration details. If login success the forward user to Index Page otherwise show login failure Message
 
+`sql`
 ```sql
 CREATE DATABASE user_db;
 
@@ -326,6 +337,7 @@ CREATE TABLE users (
 );
 ```
 
+`html`
 ```html
 <!DOCTYPE html>
 <html>
@@ -344,6 +356,7 @@ CREATE TABLE users (
 
 ```
 
+`login.jsp`
 ```login.jsp
 <%@ page import="java.sql.*" %>
 <%
@@ -394,6 +407,7 @@ CREATE TABLE users (
 
 ```
 
+`index.jsp`
 ```index.jsp
 <%@ page language="java" contentType="text/html; charset=UTF-8" %>
 <html>
@@ -408,6 +422,7 @@ CREATE TABLE users (
 
 ```
 
+`bash`
 ```bash
 http://localhost:8080/YourApp/login.html
 ```
@@ -416,6 +431,7 @@ http://localhost:8080/YourApp/login.html
 
 ### Write a web based student registration application where students can register online with their enrolment number. The registered students should be able to log on to the site after getting registered. You are required to use JSP, Servlet and JDBC
 
+`sql`
 ```sql
 CREATE DATABASE student_portal;
 
@@ -429,6 +445,7 @@ CREATE TABLE students (
 );
 ```
 
+`File Structure`
 ```pgsql
 StudentApp/
 ├── register.html
@@ -441,6 +458,7 @@ StudentApp/
 │   ├── LoginServlet.java
 ```
 
+`register.html`
 ```register.html
 <!DOCTYPE html>
 <html>
@@ -457,6 +475,7 @@ StudentApp/
 </html>
 ```
 
+`login.html`
 ```login.html
 <!DOCTYPE html>
 <html>
@@ -472,6 +491,7 @@ StudentApp/
 </html>
 ```
 
+`RegisterServlet.java`
 ```RegisterServlet.java
 import java.io.*;
 import javax.servlet.*;
@@ -517,6 +537,7 @@ public class RegisterServlet extends HttpServlet {
 }
 ```
 
+`LoginServlet.java`
 ```LoginServlet.java
 import java.io.*;
 import javax.servlet.*;
@@ -562,6 +583,7 @@ public class LoginServlet extends HttpServlet {
 }
 ```
 
+`success.jsp`
 ```success.jsp
 <%@ page contentType="text/html;charset=UTF-8" %>
 <html>
@@ -573,6 +595,7 @@ public class LoginServlet extends HttpServlet {
 </html>
 ```
 
+`web.xml`
 ```web.xml
 <web-app>
     <servlet>
@@ -594,4 +617,3 @@ public class LoginServlet extends HttpServlet {
     </servlet-mapping>
 </web-app>
 ```
-
