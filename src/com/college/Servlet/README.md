@@ -1,6 +1,6 @@
 # Java Servlet Codes
 
-<hr>
+<br>
 
 ### Write a servlet program to create a simple servlet and test it.
 
