@@ -15,10 +15,10 @@ class Q {
 }
 
 class Producer implements Runnable {
-    Qq q;
+    Q q;
     Thread t;
 
-    Producer (Qq q) {
+    Producer (Q q) {
         this.q = q;
         t = new Thread(this, "Producer");
     }
@@ -32,11 +32,11 @@ class Producer implements Runnable {
 }
 
 class Consumer implements Runnable {
-    Qq q;
+    Q q;
     Thread t;
 
-    Consumer (Qq q) {
-        this .q = q;
+    Consumer (Q q) {
+        this.q = q;
         t = new Thread(this, "Consumer");;
     }
 
@@ -49,7 +49,7 @@ class Consumer implements Runnable {
 
 public class PC {
     public static void main(String[] args) {
-        Qq q = new Qq();
+        Q q = new Q();
         ProducerP p  = new ProducerP(q);
         ConsumerC c = new ConsumerC(q);
 

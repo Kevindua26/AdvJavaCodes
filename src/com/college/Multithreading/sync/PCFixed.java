@@ -37,7 +37,7 @@ class ProducerP implements Runnable {
     Qq q;
     Thread t;
 
-    ProducerP(Qq q) {
+    ProducerP(Q q) {
         this.q = q;
         t = new Thread(this, "Producer");
     }
@@ -54,7 +54,7 @@ class ConsumerC implements Runnable {
     Qq q;
     Thread t;
 
-    ConsumerC(Qq q) {
+    ConsumerC(Q q) {
         this .q = q;
         t = new Thread(this, "Consumer");;
     }
